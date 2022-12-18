@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Earth from '@/pages/earth';
 import Venus from '@/pages/venus';
-// import './index.css'
+import '@/styles/index.css';
 
 class App extends React.PureComponent {
   render() {
