@@ -4,7 +4,9 @@ import styles from './index.module.less';
 const Venus = () => {
   return (
     <div className={styles.pageContainer}>
-      <div className="w-64 h-8 bg-gradient-to-br from-fuchsia-500 to-purple-600">Venus</div>
+      <div className="flex items-center bg-gradient-to-br rounded-xl shadow-md p-6 space-x-4 max-w-sm mx-auto">
+        Venus
+      </div>
     </div>
   );
 };
