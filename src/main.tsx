@@ -5,24 +5,22 @@ import Earth from '@/pages/earth';
 import Venus from '@/pages/venus';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
-import rootReducer from './reducers/index';
-import '@/styles/index.css';
+import { store } from '@/store';
 
-class App extends React.PureComponent {
-  render() {
-    return (
-      <Provider store={configureStore({ reducer: rootReducer })}>
-        <Router>
-          <Routes>
-            <Route path="/Venus" element={<Venus />} />
-            <Route path="/Earth" element={<Earth />} />
-            <Route path="/" element={<Earth />} />
-          </Routes>
-        </Router>
-      </Provider>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/Venus" element={<Venus />} />
+          <Route path="/Earth" element={<Earth />} />
+          <Route path="/" element={<Earth />} />
+        </Routes>
+      </Router>
+    </Provider>
+  );
+};
+
 const container = document.getElementById('root') as HTMLElement;
 const root = createRoot(container);
 
