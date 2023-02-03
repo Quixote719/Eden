@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Earth from '@/pages/earth';
-import Venus from '@/pages/venus';
 import '@/styles/index.css';
+
+const AsyncEarth = lazy(() => import('./pages/earth'));
+const AsyncVenus = lazy(() => import('./pages/venus'));
 
 class App extends React.PureComponent {
   render() {
     return (
       <Router>
         <Routes>
-          <Route path="/Venus" element={<Venus />} />
-          <Route path="/Earth" element={<Earth />} />
-          <Route path="/" element={<Earth />} />
+          <Route path="/Venus" element={<AsyncVenus />} />
+          <Route path="/Earth" element={<AsyncEarth />} />
+          <Route path="/" element={<AsyncEarth />} />
         </Routes>
       </Router>
     );
