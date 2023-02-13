@@ -6,6 +6,7 @@ import '@/styles/index.css';
 const AsyncEarth = lazy(() => import('./pages/earth'));
 const AsyncVenus = lazy(() => import('./pages/venus'));
 const AsyncMercury = lazy(() => import('./pages/mercury'));
+const AsyncMars = lazy(() => import('./pages/mars'));
 
 class App extends React.PureComponent {
   render() {
@@ -15,12 +16,14 @@ class App extends React.PureComponent {
           <Route path="/Venus" element={<AsyncVenus />} />
           <Route path="/Earth" element={<AsyncEarth />} />
           <Route path="/Mercury" element={<AsyncMercury />} />
+          <Route path="/Mars" element={<AsyncMars />} />
           <Route path="/" element={<AsyncEarth />} />
         </Routes>
       </Router>
     );
   }
 }
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 
