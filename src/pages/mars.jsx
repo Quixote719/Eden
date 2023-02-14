@@ -1,8 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import { useMount } from '@/utils/customHooks';
 import styles from './index.module.less';
 
 const Mars = () => {
   const registerRef = useRef(false);
+  const [dustStatus, setDustStatus] = useState(true);
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
     if (!registerRef.current) {
@@ -23,7 +26,28 @@ const Mars = () => {
     }
   }, []);
 
-  return <div id="Mars">Mars</div>;
+  return (
+    <div>
+      <div id="Mars">Mars</div>
+      {dustStatus && <Dust />}
+      <button onClick={() => setDustStatus(false)}>clean</button>
+      <div>{counter}</div>
+      <button onClick={() => setCounter(counter + 1)}>add</button>
+    </div>
+  );
+};
+
+const Dust = () => {
+  const getMountStatus = useMount();
+
+  useEffect(() => {
+    console.log('dust1', getMountStatus());
+    return () => {
+      console.log('dust2', getMountStatus());
+    };
+  });
+
+  return <div>dust</div>;
 };
 
 export default Mars;
