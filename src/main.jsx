@@ -5,18 +5,14 @@ import '@/styles/index.css';
 
 const AsyncEarth = lazy(() => import('./pages/earth'));
 const AsyncVenus = lazy(() => import('./pages/venus'));
-const AsyncMercury = lazy(() => import('./pages/mercury'));
-const AsyncMars = lazy(() => import('./pages/mars'));
 
 class App extends React.PureComponent {
   render() {
     return (
       <Router>
         <Routes>
-          <Route path="/Venus" element={<AsyncVenus />} />
           <Route path="/Earth" element={<AsyncEarth />} />
-          <Route path="/Mercury" element={<AsyncMercury />} />
-          <Route path="/Mars" element={<AsyncMars />} />
+          <Route path="/Venus" element={<AsyncVenus />} />
           <Route path="/" element={<AsyncEarth />} />
         </Routes>
       </Router>

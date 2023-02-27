@@ -1,42 +1,38 @@
-import React, { useState, useRef, useEffect } from 'react';
-import styles from './index.module.less';
+import React, { createContext, useContext, useReducer } from 'react';
 
-const CarouselEl = 'SATURN'.split('');
+const VenusContext = createContext({ count: 0 });
+const initialState = { count: 0 };
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'increment':
+      console.log('state', state);
+      return { count: state.count + 1 };
+    case 'decrement':
+      console.log('state', state);
+      return { count: state.count - 1 };
+    default:
+      throw new Error();
+  }
+};
 
-const Venus = props => {
-  const [curCrIndex, setCurCrIndex] = useState(0);
-  const curCrNumber = useRef(0);
-  const setScroll = useRef(false);
+const Counter = () => {
+  const { state, dispatch } = useContext(VenusContext);
+  return (
+    <div>
+      <div>{state.count}</div>
+      <div onClick={() => dispatch({ type: 'decrement' })}>-</div>
+      <div onClick={() => dispatch({ type: 'increment' })}>+</div>
+    </div>
+  );
+};
 
-  useEffect(() => {
-    if (!setScroll.current) {
-      setScroll.current = true;
-      setInterval(() => {
-        curCrNumber.current =
-          curCrNumber.current < CarouselEl.length - 1 ? curCrNumber.current + 1 : 0;
-        setCurCrIndex(curCrNumber.current);
-      }, 1500);
-    }
-  }, []);
-
-  const generateCarousel = () => {
-    return (
-      <div className={styles.carouselWindow}>
-        <div
-          className={styles.carouselItemBlock}
-          style={{ width: CarouselEl.length * 600, left: curCrIndex * -600 }}
-        >
-          {CarouselEl.map((item, key) => (
-            <div className={styles.carouselItem} key={key}>
-              {item}
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  };
-
-  return <div>{generateCarousel()}</div>;
+const Venus = () => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  return (
+    <VenusContext.Provider value={{ state, dispatch }}>
+      <Counter />
+    </VenusContext.Provider>
+  );
 };
 
 export default Venus;
