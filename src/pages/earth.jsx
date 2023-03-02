@@ -1,5 +1,6 @@
-import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useRef, useEffect, useLayoutEffect, useContext } from 'react';
 import Moment from 'moment';
+import solarContext from '../context/solarContext';
 import styles from './index.module.less';
 
 const Timer = () => {
@@ -31,7 +32,7 @@ const Timer = () => {
 
 const Earth = () => {
   const [showTimer, setTimer] = useState(false);
-
+  const solarContextProps = useContext(solarContext);
   const changeTimer = () => {
     setTimer(!showTimer);
   };
@@ -40,6 +41,7 @@ const Earth = () => {
     <div>
       <button onClick={changeTimer}>toggle timer</button>
       {showTimer && <Timer />}
+      <div>{solarContextProps.name}</div>
     </div>
   );
 };
