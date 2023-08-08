@@ -8,7 +8,7 @@ const pallete7 = ['#ef476fff', '#ffd166ff', '#06d6a0ff', '#118ab2ff', '#073b4cff
 const palleteArr = [pallete1, pallete2, pallete3, pallete4, pallete5, pallete6, pallete7]
 
 const colorPallete = (param: number) => {
-    return palleteArr[Math.round(param) % 7]
+    return palleteArr[Math.round(param) % (palleteArr.length)]
 }
 
 export default colorPallete
