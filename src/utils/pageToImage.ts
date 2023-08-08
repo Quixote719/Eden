@@ -4,7 +4,7 @@ const getImage = (node: any) => domtoimage
     .toJpeg(node)
     .then(function (dataUrl: any) {
         var link = document.createElement('a');
-        link.download = 'my-image-name.jpeg';
+        link.download = 'my-image-name.png';
         link.href = dataUrl;
         link.click();
     });
