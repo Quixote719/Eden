@@ -12,8 +12,8 @@ const Earth = () => {
 
   return (
     <div>
-        <button onClick={()=>downloadCardImage()} className={styles.downloadBtn} style={{margin: '10px auto', display: 'block'}}>download the card image</button>
-        <div id='mythCard'>
+        <button onClick={()=>downloadCardImage()} className={styles.downloadBtn} style={{margin: '10px', display: 'block'}}>download the card image</button>
+        <div className={styles.cardDiv} id='mythCard'>
           <Card title={"Cabala"} content={"Cabala origins in ..."} bgColor={colorPallete(3)[1]}/> 
         </div>
     </div>
