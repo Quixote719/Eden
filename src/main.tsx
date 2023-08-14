@@ -5,12 +5,14 @@ import '@/styles/index.css';
 
 const CardSandbox = lazy(() => import('./pages/cardSandbox'));
 const ColorSandbox = lazy(() => import('./pages/colorSandbox'));
+const LIVE_DIE = lazy(() => import('./pages/liveordie'));
 
 class App extends React.PureComponent {
   render() {
     return (
       <Router>
         <Routes>
+          <Route path="/Mercury" element={<LIVE_DIE />} />
           <Route path="/Venus" element={<ColorSandbox />} />
           <Route path="/Earth" element={<CardSandbox />} />
           <Route path="/" element={<CardSandbox />} />
