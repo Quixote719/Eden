@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "earth": "vite --mode earth",
+    "venus": "vite --mode venus",
     "build": "tsc && vite build",
+    "build:earth": "tsc && vite build --mode earth",
+    "build:venus": "tsc && vite build --mode venus",
     "serve": "vite preview",
     "prepare": "husky install"
   },

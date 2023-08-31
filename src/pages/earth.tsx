@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './index.module.less';
 
+console.log(999, import.meta.env)
 const Earth = () => {
   return (
     <div>
