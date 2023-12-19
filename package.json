@@ -2,10 +2,10 @@
   "name": "vitereactboiler",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "prepare": "husky install"
+    "prepare": "pnpm install husky"
   },
   "dependencies": {
     "react": "^18.1.0",
