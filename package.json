@@ -5,7 +5,21 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "prepare": "pnpm install husky"
+    "prepare": "husky install",
+    "lint-cache": "eslint --cache . --ext .js,.jsx,.ts,.tsx",
+    "lint-staged": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "echo 'begin to lint staged files'",
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,10 +30,6 @@
     "@ant-design/icons": "^5.2.6",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@types/react": "^18.2.46",
-    "@types/react-dom": "^18.2.18",
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
-    "@typescript-eslint/parser": "^6.17.0",
     "@vitejs/plugin-react": "^4.2.1",
     "antd": "^5.12.7",
     "autoprefixer": "^10.4.16",
@@ -38,7 +48,6 @@
     "prettier": "^3.1.1",
     "stylelint": "^16.1.0",
     "stylelint-config-standard": "^36.0.0",
-    "typescript": "^5.3.3",
     "vite": "^5.0.10",
     "vite-plugin-imp": "^2.4.0"
   }

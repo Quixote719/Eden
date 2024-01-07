@@ -7,6 +7,9 @@ import styles from './index.module.less';
 const { RangePicker } = DatePicker;
 
 const CompLab = () => {
+  console.log(666)
+          
+                                    console.warn(888)
   return (
     <div>
         <Button>click</Button>
