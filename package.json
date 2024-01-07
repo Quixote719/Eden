@@ -9,18 +9,6 @@
     "lint-cache": "eslint --cache . --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "echo 'begin to lint staged files'",
-      "eslint --cache --fix",
-      "prettier --write"
-    ]
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
