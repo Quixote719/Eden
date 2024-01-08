@@ -5,7 +5,7 @@ import { DatePicker } from 'antd';
 
 const { RangePicker } = DatePicker;
 
-    const CompLab = () => {
+const CompLab = () => {
   return (
     <div>
       <Button>click</Button>
