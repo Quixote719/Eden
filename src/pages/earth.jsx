@@ -81,7 +81,7 @@ class Africa extends React.PureComponent {
   }
 }
 
-const Europe = forwardRef((props, ref) => {
+const Europe = forwardRef((_, ref) => {
   useImperativeHandle(ref, () => ({
     requestData: getData
   }));

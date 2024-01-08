@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import ReactECharts from 'echarts-for-react';
 
 const RMSPortal = () => {
@@ -6,11 +6,11 @@ const RMSPortal = () => {
         return {
             grid: { top: 20, right: 40, bottom: 20, left: 40 },
             xAxis: {
-            type: "category",
+            type: 'category',
             data: ['Matcha Latte', 'Milk Tea', 'Cheese Cocoa', 'Walnut Brownie']
             },
             yAxis: {
-            type: "value",
+            type: 'value',
             scale: true
             },
             series: [
@@ -34,7 +34,7 @@ const RMSPortal = () => {
               }
             ],
             tooltip: {
-            trigger: "axis"
+            trigger: 'axis'
             }
         }
     }
@@ -78,7 +78,7 @@ const RMSPortal = () => {
     };
   }
 
-  const getRoseOption = (param) => {
+  const getRoseOption = () => {
     return {
       legend: {
         orient: 'vertical',
@@ -129,7 +129,7 @@ const RMSPortal = () => {
         option={getTrendOption('bar')}
         notMerge={true}
         lazyUpdate={true}
-        theme={"theme_name"}
+        theme={'theme_name'}
         onChartReady={()=>{}}
         // onEvents={EventsDict}
         // opts={}
@@ -138,7 +138,7 @@ const RMSPortal = () => {
         option={getTrendOption('line')}
         notMerge={true}
         lazyUpdate={true}
-        theme={"theme_name"}
+        theme={'theme_name'}
         onChartReady={()=>{}}
         // onEvents={EventsDict}
         // opts={}
@@ -147,7 +147,7 @@ const RMSPortal = () => {
         option={getPieOption('pie')}
         notMerge={true}
         lazyUpdate={true}
-        theme={"theme_name"}
+        theme={'theme_name'}
         onChartReady={()=>{}}
         // onEvents={EventsDict}
         // opts={}
@@ -156,7 +156,7 @@ const RMSPortal = () => {
         option={getRoseOption('area')}
         notMerge={true}
         lazyUpdate={true}
-        theme={"theme_name"}
+        theme={'theme_name'}
         onChartReady={()=>{}}
         // onEvents={EventsDict}
         // opts={}

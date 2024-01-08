@@ -1,13 +1,13 @@
 {
     "env": {
         "browser": true,
+        "node": true,
         "es2021": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
-        "plugin:prettier/recommended"
+        "plugin:react-hooks/recommended"
     ],
     "settings": {
         "react": {
@@ -23,6 +23,7 @@
     ],
     "rules": {
         "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
-        "no-console": ["error", { "allow": ["warn"] }]
+        "quotes": ["error", "single"],
+        "react/display-name": "off"
     }
 }
