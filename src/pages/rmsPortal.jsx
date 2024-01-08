@@ -2,44 +2,44 @@ import React from 'react';
 import ReactECharts from 'echarts-for-react';
 
 const RMSPortal = () => {
-    const getTrendOption = (param) => {
-        return {
-            grid: { top: 20, right: 40, bottom: 20, left: 40 },
-            xAxis: {
-            type: 'category',
-            data: ['Matcha Latte', 'Milk Tea', 'Cheese Cocoa', 'Walnut Brownie']
-            },
-            yAxis: {
-            type: 'value',
-            scale: true
-            },
-            series: [
-              {
-                smooth: true,
-                type: param,
-                name: '2015',
-                data: [89.3, 92.1, 94.4, 85.4]
-              },
-              {
-                smooth: true,
-                type: param,
-                name: '2016',
-                data: [95.8, 89.4, 91.2, 76.9]
-              },
-              {
-                smooth: true,
-                type: param,
-                name: '2017',
-                data: [97.7, 83.1, 92.5, 78.1]
-              }
-            ],
-            tooltip: {
-            trigger: 'axis'
-            }
+  const getTrendOption = param => {
+    return {
+      grid: { top: 20, right: 40, bottom: 20, left: 40 },
+      xAxis: {
+        type: 'category',
+        data: ['Matcha Latte', 'Milk Tea', 'Cheese Cocoa', 'Walnut Brownie']
+      },
+      yAxis: {
+        type: 'value',
+        scale: true
+      },
+      series: [
+        {
+          smooth: true,
+          type: param,
+          name: '2015',
+          data: [89.3, 92.1, 94.4, 85.4]
+        },
+        {
+          smooth: true,
+          type: param,
+          name: '2016',
+          data: [95.8, 89.4, 91.2, 76.9]
+        },
+        {
+          smooth: true,
+          type: param,
+          name: '2017',
+          data: [97.7, 83.1, 92.5, 78.1]
         }
-    }
+      ],
+      tooltip: {
+        trigger: 'axis'
+      }
+    };
+  };
 
-  const getPieOption = (param) => {
+  const getPieOption = param => {
     return {
       legend: {
         orient: 'vertical',
@@ -76,7 +76,7 @@ const RMSPortal = () => {
         }
       ]
     };
-  }
+  };
 
   const getRoseOption = () => {
     return {
@@ -121,7 +121,7 @@ const RMSPortal = () => {
         }
       ]
     };
-  }
+  };
 
   return (
     <div>
@@ -130,7 +130,7 @@ const RMSPortal = () => {
         notMerge={true}
         lazyUpdate={true}
         theme={'theme_name'}
-        onChartReady={()=>{}}
+        onChartReady={() => {}}
         // onEvents={EventsDict}
         // opts={}
       />
@@ -139,7 +139,7 @@ const RMSPortal = () => {
         notMerge={true}
         lazyUpdate={true}
         theme={'theme_name'}
-        onChartReady={()=>{}}
+        onChartReady={() => {}}
         // onEvents={EventsDict}
         // opts={}
       />
@@ -148,7 +148,7 @@ const RMSPortal = () => {
         notMerge={true}
         lazyUpdate={true}
         theme={'theme_name'}
-        onChartReady={()=>{}}
+        onChartReady={() => {}}
         // onEvents={EventsDict}
         // opts={}
       />
@@ -157,7 +157,7 @@ const RMSPortal = () => {
         notMerge={true}
         lazyUpdate={true}
         theme={'theme_name'}
-        onChartReady={()=>{}}
+        onChartReady={() => {}}
         // onEvents={EventsDict}
         // opts={}
       />

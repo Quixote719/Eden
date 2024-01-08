@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@/styles/index.less';
 
-
 const AsyncRMSPortal = lazy(() => import('./pages/rmsPortal'));
 const AsyncEarth = lazy(() => import('./pages/earth'));
 const AsyncCompLab = lazy(() => import('./pages/compLab'));

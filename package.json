@@ -5,6 +5,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview",
+    "prettier": "prettier --cache --write .",
     "lint": "eslint --cache . --ext .js,.jsx",
     "prepare": "husky install"
   },
