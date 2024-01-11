@@ -1,6 +1,7 @@
 import React, { lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AppContextProvider from '@/store/appContext.jsx';
 import '@/styles/index.less';
 
 const AsyncRMSPortal = lazy(() => import('./pages/rmsPortal'));
@@ -10,20 +11,21 @@ const AsyncCompLab = lazy(() => import('./pages/compLab'));
 class App extends React.PureComponent {
   render() {
     return (
-      <Router>
-        <Routes>
-          <Route path="/Earth" element={<AsyncEarth />} />
-          <Route path="/RMS" element={<AsyncRMSPortal />} />
-          <Route path="/compLab" element={<AsyncCompLab />} />
-          <Route path="/" element={<AsyncEarth />} />
-        </Routes>
-      </Router>
+      <AppContextProvider>
+        <Router>
+          <Routes>
+            <Route path="/Earth" element={<AsyncEarth />} />
+            <Route path="/RMS" element={<AsyncRMSPortal />} />
+            <Route path="/compLab" element={<AsyncCompLab />} />
+            <Route path="/" element={<AsyncEarth />} />
+          </Routes>
+        </Router>
+      </AppContextProvider>
     );
   }
 }
 
-const container = document.getElementById('root');
-const root = createRoot(container);
+const root = createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
