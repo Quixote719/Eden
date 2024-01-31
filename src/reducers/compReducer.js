@@ -1,5 +1,9 @@
 const themeInitState = {
-  theme: 'blue'
+  theme: 'blue',
+  state: {
+    id: '',
+    region: 'China'
+  }
 };
 
 const counterReducer = (state, action) => {

@@ -4,6 +4,7 @@ import { Button, FloatButton, DatePicker } from 'antd';
 import { getColors } from '@/api/testApi';
 import { counterReducer, colorReducer } from '@/reducers/compReducer';
 import { useAppContext } from '@/store/appContext';
+import styles from './index.module.less';
 
 const { RangePicker } = DatePicker;
 
@@ -53,7 +54,7 @@ const CompLab = () => {
       </div>
       <div>
         {palette.map((item, index) => (
-          <div key={index}>{item}</div>
+          <div className={styles.colorBlock} style={{ background: item }} key={index}></div>
         ))}
       </div>
     </div>

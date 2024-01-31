@@ -220,6 +220,16 @@ const RMSPortal = () => {
   return (
     <div>
       <ReactECharts
+        option={getGeoOption(stateInfo, geoType)}
+        notMerge={true}
+        lazyUpdate={true}
+        theme={'theme_name'}
+        onChartReady={() => {}}
+        style={{ height: '800px', width: '100%' }}
+        // onEvents={EventsDict}
+        // opts={}
+      />
+      <ReactECharts
         option={getTrendOption('bar')}
         notMerge={true}
         lazyUpdate={true}
@@ -252,16 +262,6 @@ const RMSPortal = () => {
         lazyUpdate={true}
         theme={'theme_name'}
         onChartReady={() => {}}
-        // onEvents={EventsDict}
-        // opts={}
-      />
-      <ReactECharts
-        option={getGeoOption(stateInfo, geoType)}
-        notMerge={true}
-        lazyUpdate={true}
-        theme={'theme_name'}
-        onChartReady={() => {}}
-        style={{ height: '800px', width: '100%' }}
         // onEvents={EventsDict}
         // opts={}
       />
