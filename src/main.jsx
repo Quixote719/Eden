@@ -7,6 +7,7 @@ import '@/styles/index.less';
 const AsyncRMSPortal = lazy(() => import('./pages/rmsPortal'));
 const AsyncEarth = lazy(() => import('./pages/earth'));
 const AsyncCompLab = lazy(() => import('./pages/compLab'));
+const AsyncMenu = lazy(() => import('./pages/menu'));
 
 class App extends React.PureComponent {
   render() {
@@ -17,6 +18,7 @@ class App extends React.PureComponent {
             <Route path="/Earth" element={<AsyncEarth />} />
             <Route path="/RMS" element={<AsyncRMSPortal />} />
             <Route path="/compLab" element={<AsyncCompLab />} />
+            <Route path="/menu" element={<AsyncMenu />} />
             <Route path="/" element={<AsyncEarth />} />
           </Routes>
         </Router>

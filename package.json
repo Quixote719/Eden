@@ -22,6 +22,7 @@
     "@commitlint/config-conventional": "^18.4.3",
     "@esbuild/darwin-x64": "^0.19.11",
     "@rollup/rollup-darwin-x64": "^4.9.4",
+    "@uiw/react-baidu-map": "^2.7.1",
     "@vitejs/plugin-react": "^4.2.1",
     "antd": "^5.12.7",
     "autoprefixer": "^10.4.16",

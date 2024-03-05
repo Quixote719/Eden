@@ -31,6 +31,9 @@ devDependencies:
   '@rollup/rollup-darwin-x64':
     specifier: ^4.9.4
     version: 4.9.4
+  '@uiw/react-baidu-map':
+    specifier: ^2.7.1
+    version: 2.7.1(react-dom@18.2.0)(react@18.2.0)
   '@vitejs/plugin-react':
     specifier: ^4.2.1
     version: 4.2.1(vite@5.0.10)
@@ -1420,6 +1423,376 @@ packages:
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@uiw/react-baidu-map-api-loader@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-DfSfD7C+0iSVSaRtu25288PmSfJfqpFI3kKJladuQJDAlFf9RDBCQQEtYUoCKS17u9mqsJSfWZv8S1U6bBGnAg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-circle@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-YelLX6gvwGoAWu8waqaOUYxMt2SQLxkqBcAAnScf9p2WvKWt+yuDCRPCkQn2X/9KPmJWWgbw7nOhjqnUG4BkNw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-VW4DCrwQcTe8+dk9wzsTWgBytinrul7dBslyuY2lC4YimD2pgiWcSgUlJ3dgFxVWOCcVQXoIL9BBluYE7Ge4+Q==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-copyright-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-oaAHeRrU7KziJfygIzzmXUcppz77AAmgQpkT0KWO90v2+maVCNeRIUwDb8cw/Kbqv0sB0CBAQnZCgzLHZuOQvw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-curve-line@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-jaB+wKMeHnh8X9BM9HH3As6JSPo3/gHDYBfi1HMaDkf2d8KtwSLPng++EVbHKIkYqxYde8x3vyPAXE3xSNtghg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-custom-overlay@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-+iEPsfBfU04sFi+d7J0BZfXxK+qqYWd6H5o06b5PisUrJz+qojAZrG2mSASR+doItFZ8uDkfqnk4UZP+e9rM3w==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-drawing-manager@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qmrNy6MNOe5U8Sizts6SeIbNBToeOPyufZ3C1nXQKHzYZg+HhkWURVF3a29zqt/cyBkM99LfSuZVy3PU5QUslw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-geolocation-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-LhhgvIQ2yg1xQ9i5I1lMNZg3avEI4tq8c1LMPBdj/vjmIzEkk3A0C+YvkislFcS4cjXbHzJxTFFgCXJmkf4H9w==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-ground-overlay@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-we8rNrstEU3YtxUiRXje9ArBqsiWquNMS29e1xuDd6w5LTu6T3XUrpJRT0BGOwwdHWXyNiMDX0pP8KgLk0o3nQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-info-window@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-axmL+OW3aMhJnrmLrmwUNI6ZP5xv3CkIbdDSQUIDw80jS5Iw/cT53Ty0R19K9KLhnQHjhf/qM+6IWjSV4QjcCQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-label@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-1Ci8us+LUaRtqz9vTNHlsn8+FZ3tPJcqifd1w1gnB9WypJwPcyHiFBoPSHZOhOb+SLgxCMkXYXGpTDvSTQBe+Q==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-map@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PCBEKovMPZDiocXf0GFXJh/kzqVI4zTL8d8McjCwRAN/kvXTOBpQ4Z+odgTXTAyt0eXIMP9sUZ3HiUZVPdjwfA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-api-loader': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-types': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-marker@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-sxS1LP9wzs4xlCWEikL8s17ZgGsi4xFGBCALrPDfGkOsbPjaWCtB5BdfCLF7/TBwx1E1HEF10xUuUFDe7CiEew==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-navigation-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Vx+4MQlKZ85Hbnh3bvrGsMHeTq1o9C4CFvs7U9kLUA+vvmDramxHmlzKWZ4aGfYUodQwl6qDbs5suHG7OR8W/w==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-overview-map-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-et6Uuw/9mEmEIzAsOWnXa8bdd459GkMOAzcnW347OgFHiy/FsAXRoPC5HTva+5L+z/qmmDhWrpgCrrqLtRm8ng==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-panorama-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-h2RBej1f8JQGl3l4ToNrG8DzTZ7wIGwpZamuLVqKoVtNxCGcFJ0RvFoKHYNGSFfok5E6sBE5dUXrrBUN4e32Rw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-point-collection@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-yL2Q/XmbFTgUmuzACy61yqAhjF5NNcvgWbTsz2Eve/9HS9aRWIfvZo82SabQeBIoKjRLNOiiV5FxXczUKgAIwA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-polygon@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-wkO0zDA/WBiTyfu4Mhcp1M2ib3Q7JRuitE4umaYpPYia3SHBHH4cjFIsa1Xp4trle+LpQ9VIgEEuTRDjp+SWZQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-polyline@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-reaToV6TEgfPNVpRc9WbGZg7quSgzZqEmXmXRiqlm8BQAnuCC7qjYIjRuw6uRX/p01z7B6BggAcKDKfQR+bsPw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-require-script@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-D7xDkMHg+fBob+SO22gWnYd4d1w6Bd0bRSV8/Ngy3ijm1w+AynB49Vlx2cWHZp+np+IlBUdGd2ux+xtdSHEqrQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-scale-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-XquEa4oxCBV8GyMP5OXmL/9Tf2HyPCPAJOBbFjwubFxP+WwLYhgRDz9IKkimw12XRytSs9ClR3+hI86l71cjJw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-tile-layer@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-gR2RK0h2Qqeaza7IiXFkWzsb3oSMstE5zMufJtemC0TwRSYnbiMQXL/9C+/8ifnVhHj5Z6AIR7QZsGs4KVrS5A==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-type-control@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-mdZzJa34fCkPxdPf+VNxB4Qr1QytqP4N5JqfLPT3/gjVHK27iDS05l4L+ATvmbh308JiuGEGb+MDJIfxhb4jBA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-types@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-OtFXLL3Nddl3kNID+v4wDlbqzmzN8l+CeO0uWJfamR22z7h9ujIyKB2rBqJKIbn9bv7/inWO2ZCF9NPm3rbuPQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-utils@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-FSGafiPuneJzFGXfz7zgWhu88oD2EUK4gqHZ03g400yQwoAOqnjtTbQDuDvO60Y1MTdgjtGssWZ723v9NYpgYg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-types': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map-with-map@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-tgr42d39SM77ZH+f21Ps75qNFsQug+/nrCEvh9SOw1KeXjpUNOv5QJkA4fkcLuLyYO467FEpi3o0DYtHMvWK7Q==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@uiw/react-baidu-map@2.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-CS4H1zuoMnPbVhdXSZNFMOuN5FZnULxpF3927h+qu3ZiBHPVq+VOC1DRog0mORCalBgMLB/cvm1nVncmURq1vg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.7
+      '@uiw/react-baidu-map-api-loader': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-circle': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-copyright-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-curve-line': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-custom-overlay': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-drawing-manager': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-geolocation-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-ground-overlay': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-info-window': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-label': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-marker': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-navigation-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-overview-map-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-panorama-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-point-collection': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-polygon': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-polyline': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-require-script': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-scale-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-tile-layer': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-type-control': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-types': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-utils': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      '@uiw/react-baidu-map-with-map': 2.7.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: true
 
   /@ungap/structured-clone@1.2.0:
