@@ -41,8 +41,8 @@ const CompLab = () => {
 
   return (
     <div style={{ color: cxt?.state?.theme }}>
-      <Button onClick={() => changeNum('increase')}>increase</Button>
       <Button onClick={() => changeNum('decrease')}>decrease</Button>
+      <Button onClick={() => changeNum('increase')}>increase</Button>
       <Button onClick={() => genColor()}>color change</Button>
       <Button onClick={() => changeTheme()}>change theme</Button>
       <div>{counterState.count}</div>
