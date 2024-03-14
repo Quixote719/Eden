@@ -30,17 +30,25 @@
   line-height: 300px;
 }
 
-.sideBar {
+.leftSider {
   width: 270px;
   height: 100vh;
+  overflow: auto;
   background: #001628;
   display: inline-block;
 }
 
 .mapSpace {
   margin: auto;
-  width: 800px;
-  height: 800px;
+  width: calc(100vw - 540px);
+  height: 100vh;
   position: absolute;
   display: inline-block;
+}
+
+.rightSider {
+  width: 270px;
+  height: 100vh;
+  float: right;
+  background: #dddddd;
 }

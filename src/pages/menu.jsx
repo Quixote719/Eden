@@ -82,7 +82,7 @@ const MenuApp = () => {
         >
           {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
         </Button> */}
-        <div className={styles.sideBar}>
+        <div className={styles.leftSider}>
           <Menu
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
@@ -114,6 +114,7 @@ const MenuApp = () => {
           </Map>
         </APILoader>
       </div>
+      <div className={styles.rightSider}></div>
     </div>
   );
 };
