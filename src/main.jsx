@@ -8,6 +8,7 @@ const AsyncRMSPortal = lazy(() => import('./pages/rmsPortal'));
 const AsyncEarth = lazy(() => import('./pages/earth'));
 const AsyncCompLab = lazy(() => import('./pages/compLab'));
 const AsyncMenu = lazy(() => import('./pages/menu'));
+const AsyncFlow = lazy(() => import('./pages/flow'));
 
 class App extends React.PureComponent {
   render() {
@@ -19,6 +20,7 @@ class App extends React.PureComponent {
             <Route path="/RMS" element={<AsyncRMSPortal />} />
             <Route path="/compLab" element={<AsyncCompLab />} />
             <Route path="/menu" element={<AsyncMenu />} />
+            <Route path="/flow" element={<AsyncFlow />} />
             <Route path="/" element={<AsyncEarth />} />
           </Routes>
         </Router>
